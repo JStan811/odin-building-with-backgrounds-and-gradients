@@ -1,0 +1,108 @@
+* {
+  -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+      box-sizing: border-box; }
+
+body {
+  background-color: #FFFFFF;
+  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+}
+
+.container {
+  width: 75%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 2px;
+  height: 90.5%;
+}
+
+.one {
+  grid-column: 1 / 5;
+  grid-row: 1 / 4;
+  background-image: url("../img/your_verse_hero.jpg");
+  background-position: 0px -657px;
+}
+
+nav {
+  width: 68%;
+  height: 37px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 82px;
+  background: linear-gradient(#878787 50%, #696969 50%);
+  border-radius: 3px;
+  border: 1px solid #696969;
+}
+
+ul {
+  height: 100%;
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0;
+  padding: 0 0;
+  color: white;
+}
+
+li {
+  flex-basis: 100px;
+}
+
+.text {
+  width: 55%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+  color: white;
+  text-align: center;
+}
+
+.text h1 {
+  font-size: 24px;
+}
+
+.text p {
+  font-size: 16px;
+}
+
+.two {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  background-image: url("../img/promo_iphone5s.jpg");
+}
+
+.three {
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+  background-image: url("../img/promo_iphone5c.jpg");
+}
+
+.four {
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  background-image: url("../img/promo_30_years.jpg");
+}
+
+.five {
+  grid-column: 4 / 5;
+  grid-row: 4 / 5;
+  background-image: url("../img/promo_supplier_responsibility.jpg");
+}
+
+footer {
+  display: flex;
+  gap: 2px;
+  height: 90px;
+}
+
+footer div {
+  flex-basis: 50%;
+}
